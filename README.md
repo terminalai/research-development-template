@@ -1,11 +1,17 @@
-# ML Project Template
+# ML Research Project Template
 
-This repository contains a template project that can be easily adapted for all kinds of Machine Learning tasks. 
-Typically, solving such task entails two main phases, _research_ and _production_ with very different focuses. The template intends to faciliatate work on ML projects by guiding practitioners to adopt some best practices.
+This template is designed to help you with your research projects. In addition to the basic python code you would see in a generic project, I have also added development and production sections, including app development and web development.
 
-[`research`](./research): exploratory data analyses, model prototyping and experiments are dumped here in a structured way
+In a more generic sense, a ML Research Project goes through 3 real components:
 
-[`production`](./production): distilled utils lib, training job and inference service are implemented here
+- **research**, wherein students perform exploratory data analyses, cleaning, model prototyping and simple experimentation and exploration. This is very likely done in the context of a notebook (eg Jupyter Notebook). This formally represents the data science lifecycle up till the data exploration section (i.e. acquisition, cleaning and exploration of data).
+- **production**, where researchers use the prototyped models and fully train them. Since such models require a lot of usage of RAM etc, this is often done with the help of GPUs.
+- **development**, where researchers often utilise software development strategies in a truly ML4SE-like system to visualise and utilise their results. Applications on the web, desktop or mobile are often preferred, and this repository contains many templates for such development. Often, Streamlit is also used as a substitute to simply model information rather than creating a full-fledged application.
+
+
+
+- [`research`](./research): exploratory data analyses, model prototyping and experiments are dumped here in a structured way
+- [`production`](./production): distilled utils lib, training job and inference service are implemented here
 
 It is recommended to simply clone this repo and customize it to the specific use-case at hand.
 
