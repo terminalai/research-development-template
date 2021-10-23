@@ -18,9 +18,9 @@ In a more generic sense, a ML Research Project goes through 3 real components (s
 
 - [**`production`**](./production), where researchers use the prototyped models and fully train them. Since such models require a lot of usage of RAM etc, this is often done with the help of GPUs. Hence, distilled utils lib, training job and inference service are implemented here. The production-ready solution(s) are composed of libraries, services, and jobs.
 
-  - **[python-utils-lib](./production/python-utils-lib)** (Python): Utility functions that are distilled from the research phase and used across multiple scripts. Should only contain refactored and tested Python scripts/modules. Installable via pip.
-  - **[training-job](./production/training-job)** (Python/Docker): Combines required data exports, preprocessing and training scripts into a Docker container. This makes results reproducible and the production model retrainable in _any_ ennvironment.
-  - **[inference-service](./production/inference-service)** (Python/Docker): Docker container that provides the final model prediction capabilities via a REST API.
+  - **[`python-utils-lib`](./production/python-utils-lib)** (Python): Utility functions that are distilled from the research phase and used across multiple scripts. Should only contain refactored and tested Python scripts/modules. Installable via pip.
+  - **[`training-job`](./production/training-job)** (Python/Docker): Combines required data exports, preprocessing and training scripts into a Docker container. This makes results reproducible and the production model retrainable in _any_ ennvironment.
+  - **[`inference-service`](./production/inference-service)** (Python/Docker): Docker container that provides the final model prediction capabilities via a REST API.
 
 - [**`development`**](./development), where researchers often utilise software development strategies in a truly ML4SE-like system to visualise and utilise their results. Applications on the web, desktop or mobile are often preferred, and this repository contains many templates for such development. Often, Streamlit is also used as a substitute to simply model information rather than creating a full-fledged application. Due to the complexity of these submodules, I have chosen to leave them as an exercise to the reader.
 
